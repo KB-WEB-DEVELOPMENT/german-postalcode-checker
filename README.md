@@ -14,6 +14,8 @@ This PHP 8.0 package determines if a PHP variable of data type 'string' matches 
 
 Use composer to install the package: `composer require KB-WEB-DEVELOPMENT/german-postalcodes-checker`
 
+Install the dependencies: `composer install` 
+
 You can run the Pest tests in the 'tests' directory with the command: `./vendor/bin/pest`
 
 # Usage
