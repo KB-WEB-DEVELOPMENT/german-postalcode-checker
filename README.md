@@ -1,4 +1,4 @@
- [1. Project Description](#project-description)
+ [1. Project Description](project-description)
  
  [2. Installation](#installation)
  
@@ -6,7 +6,7 @@
  
  [4. License](#license)
  
-# Project Description
+# 1. Project Description
 
 This PHP 8.0 package determines if a PHP variable of data type 'string' matches one of Germany postal codes (as of 2025).
 
