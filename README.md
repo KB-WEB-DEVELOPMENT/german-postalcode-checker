@@ -10,13 +10,13 @@
 
 This PHP 8.0 package determines if a PHP variable of data type 'string' matches one of Germany postal codes (as of 2025).
 
-# 2. Installation
+# Installation
 
 Use composer to install the package: `composer require KB-WEB-DEVELOPMENT/german-postalcodes-checker`
 
 You can run the Pest tests in the 'tests' directory with the command: `./vendor/bin/pest`
 
-# 3. Usage
+# Usage
 
 In your examples\index.php file: 
 
@@ -35,7 +35,7 @@ $postalCodesChecker = new PostalCodesChecker();
 $res = $postalCodesChecker->validate($postalCode);
 
  ```
-# 4. License 
+# License 
 
 The MIT License (MIT)
 
