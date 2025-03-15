@@ -8,9 +8,9 @@ it('empty input', function () {
 	
     $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
 	
-	$res = $postalCodesChecker->validate('');
+    $res = $postalCodesChecker->validate('');
 	
-	expect($res)->toBeFalse();
+    expect($res)->toBeFalse();
     
 });
 
@@ -18,9 +18,9 @@ it('wrong characters count', function () {
 	
     $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
 	
-	$res = $postalCodesChecker->validate('0194512345');
+    $res = $postalCodesChecker->validate('0194512345');
 	            	
-	expect($res)->toBeFalse();
+    expect($res)->toBeFalse();
  
 });
 
@@ -28,9 +28,9 @@ it('wrong characters types', function () {
 
     $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
 	
-	$res = $postalCodesChecker->validate('A1945');
+    $res = $postalCodesChecker->validate('A1945');
 	
-	expect($res)->toBeFalse();
+    expect($res)->toBeFalse();
 
 });
 
@@ -38,7 +38,7 @@ it('existing german postal code', function () {
 
     $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
 	
-	$res = $postalCodesChecker->validate('01945');
+    $res = $postalCodesChecker->validate('01945');
 	
-	expect($res)->toBeTrue();
+    expect($res)->toBeTrue();
 });
