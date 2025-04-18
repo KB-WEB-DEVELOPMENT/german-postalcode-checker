@@ -14,7 +14,7 @@ class PostalCodesChecker
     {		
 	$cleaned_input = preg_replace('/\s+/','',$input);
 		
-	if ( (ctype_digit($cleaned_input) === false) or (strlen($cleaned_input) != 5)  ) 
+	if (!(ctype_digit($cleaned_input)) or (strlen($cleaned_input) != 5)  ) 
 	   return false;
 						
 	$res = $this->checkPostalCode($cleaned_input);
@@ -53,8 +53,8 @@ class PostalCodesChecker
 			}	
 		}
 			
-		if ($res === true)
-			return $res;
+		if ($res)
+		   return $res;
 					
 	}
 		
