@@ -2,8 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Kbarut\PostalCodes\PostalCodesChecker;
+use Kbarut\PostalCode\PostalCodeChecker;
 
-$postalCodesChecker = new PostalCodesChecker();
+$postalCodeChecker = new PostalCodeChecker();
 
-var_dump($postalCodesChecker->validate('01945')); // bool(true)
+var_dump($postalCodeChecker->validate('01945')); // bool(true)
