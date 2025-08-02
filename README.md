@@ -12,7 +12,7 @@ This PHP 8.0 package determines if a PHP variable of data type 'string' matches 
 
 # Installation
 
-Use composer to install the package: `composer require KB-WEB-DEVELOPMENT/german-postalcodes-checker`
+Use composer to install the package: `composer require KB-WEB-DEVELOPMENT/german-postalcode-checker`
 
 Install the dependencies: `composer install` 
 
@@ -28,13 +28,13 @@ In your examples\index.php file:
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Kbarut\PostalCodes\PostalCodesChecker;
+use Kbarut\PostalCode\PostalCodeChecker;
 
 $postalCode = "01945";
 
-$postalCodesChecker = new PostalCodesChecker();
+$postalCodeChecker = new PostalCodeChecker();
 
-$res = $postalCodesChecker->validate($postalCode);
+$res = $postalCodeChecker->validate($postalCode);
 
  ```
 # License 
