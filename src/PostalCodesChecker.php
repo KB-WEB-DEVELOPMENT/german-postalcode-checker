@@ -1,8 +1,8 @@
 <?php
 
-namespace Kbarut\PostalCodes;
+namespace Kbarut\PostalCode;
 
-class PostalCodesChecker
+class PostalCodeChecker
 {
    /**
    * validates or invalidates $input against the german zip codes listed in the 'src/zipcodes-de.json' file,
