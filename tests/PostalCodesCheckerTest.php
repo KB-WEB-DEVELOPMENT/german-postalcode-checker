@@ -1,14 +1,14 @@
 <?php
 
-namespace Kbarut\PostalCodes\Tests;
+namespace Kbarut\PostalCode\Tests;
 
-use Kbarut\PostalCodes\PostalCodesChecker;
+use Kbarut\PostalCode\PostalCodeChecker;
 
 it('empty input', function () {
 	
-    $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
+    $postalCodeChecker = Mockery::mock(PostalCodeChecker::class);
 	
-    $res = $postalCodesChecker->validate('');
+    $res = $postalCodeChecker->validate('');
 	
     expect($res)->toBeFalse();
     
@@ -16,9 +16,9 @@ it('empty input', function () {
 
 it('wrong characters count', function () {
 	
-    $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
+    $postalCodeChecker = Mockery::mock(PostalCodeChecker::class);
 	
-    $res = $postalCodesChecker->validate('0194512345');
+    $res = $postalCodeChecker->validate('0194512345');
 	            	
     expect($res)->toBeFalse();
  
@@ -26,9 +26,9 @@ it('wrong characters count', function () {
 
 it('wrong characters types', function () {
 
-    $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
+    $postalCodeChecker = Mockery::mock(PostalCodeChecker::class);
 	
-    $res = $postalCodesChecker->validate('A1945');
+    $res = $postalCodeChecker->validate('A1945');
 	
     expect($res)->toBeFalse();
 
@@ -36,9 +36,9 @@ it('wrong characters types', function () {
 
 it('existing german postal code', function () {
 
-    $postalCodesChecker = Mockery::mock(PostalCodesChecker::class);
+    $postalCodeChecker = Mockery::mock(PostalCodeChecker::class);
 	
-    $res = $postalCodesChecker->validate('01945');
+    $res = $postalCodeChecker->validate('01945');
 	
     expect($res)->toBeTrue();
 });
