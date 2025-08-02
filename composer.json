@@ -16,11 +16,12 @@
     "autoload": {
         "psr-4": {
             "Kbarut\\PostalCode\\": "src/",
-	    "Kbarut\\Postalode\\Tests\\": "tests/"
+	    "Kbarut\\PostalCode\\Tests\\": "tests/"
         } 
     },
     "scripts": {
 	"test": "vendor/bin/pest"
     }
 }
+
 
