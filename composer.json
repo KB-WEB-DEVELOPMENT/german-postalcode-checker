@@ -1,5 +1,5 @@
 {
-    "name": "kbarut/postalcode-checker",
+    "name": "kbarut/german-postalcode-checker",
     "description": "PHP 8.0 package to determine if an user input matches an existing postal code in Germany (2025)",
     "type": "library",
     "license": "MIT",
@@ -15,11 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kbarut\\PostalCodes\\": "src/",
-	    "Kbarut\\Postalodes\\Tests\\": "tests/"
+            "Kbarut\\PostalCode\\": "src/",
+	    "Kbarut\\Postalode\\Tests\\": "tests/"
         } 
     },
     "scripts": {
 	"test": "vendor/bin/pest"
     }
 }
+
